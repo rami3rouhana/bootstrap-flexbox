@@ -159,6 +159,27 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    background-color: #1abc9c;
+}
+
+.landing-div h1 {
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.landing-div h2 {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.landing-div img{
+    width: 250px;
+}
+
+.profile-img{
+    width: 15rem;
+    margin-top: 30px;
 }
 
 .portfolio-div{
