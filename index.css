@@ -326,26 +326,53 @@
 
 /* Footer */
 .footer{
+    margin-top: 90px;
+    width: 100%;
     display: flex;
+    align-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .main-footer{
+    align-items: flex-start;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    background-color: rgb(44,62,80);
+    color: white;
 }
 
 .location{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 300px;
+}
+
+.location p{
+    width: 200px;
+    text-align: center;
 }
 
 .web{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 240px;
+    background-color: rgb(44,62,80);
+}
+
+.web-buttons button{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: white;
+    background-color: rgb(44,62,80);;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -353,10 +380,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 300px;
+}
+.about p {
+    text-align: center;
 }
 
 .copy-footer{
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #212529;
+    color: white;
+    width: 100%;
+    border-top: 2px solid gray;
 }
