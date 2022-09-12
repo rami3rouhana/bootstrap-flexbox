@@ -3,6 +3,9 @@ const desktop = () =>{
     document.getElementsByClassName("page-body")[0].style.width ="100%";
     document.getElementsByClassName("navbar")[0].style.width ="100%";
     document.getElementsByClassName("footer").style.width ="100%";
+    for (const img in imgs) {
+        imgs[img].style.width="30%"
+   };
     document.getElementsByClassName("main-footer")[0].style.removeProperty("flex-direction")
     document.getElementsByClassName("main-footer")[0].style.removeProperty("align-items")
 
@@ -23,6 +26,11 @@ const tablet = () =>{
     document.getElementsByClassName("page-body")[0].style.width ="60%";
     document.getElementsByClassName("navbar")[0].style.width ="60%";
     document.getElementsByClassName("footer")[0].style.width ="60% ";
+    const imgs = document.getElementsByClassName("portfolio-img");
+    for (const img in imgs) {
+         imgs[img].style.width="40%"
+         imgs[img].style.marginLeft="49px"
+    };
     document.getElementsByClassName("main-footer")[0].style.flexDirection="column";
     document.getElementsByClassName("main-footer")[0].style.alignItems="center";
 
@@ -45,7 +53,9 @@ const phone = () =>{
     document.getElementsByClassName("navbar")[0].style.width ="40%";
     document.getElementsByClassName("footer")[0].style.width ="40% ";
     const imgs = document.getElementsByClassName("portfolio-img");
-    imgs.map( (img) => {debugger; img.style.width="50%"})
+    for (const img in imgs) {
+         imgs[img].style.width="100%"
+    };
     document.getElementsByClassName("main-footer")[0].style.flexDirection="column";
     document.getElementsByClassName("main-footer")[0].style.alignItems="center";
 
