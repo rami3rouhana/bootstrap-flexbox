@@ -19,11 +19,103 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-bottom: 3px solid red;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.overview{
+    border: white;
+    background-color: white;
+    color: gray;
+    height: 30px;
+    font-size: x-small;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.overview:hover{
+    border: white;
+    background-color: lightgray;
+    color: rgb(243, 243, 243);
+    font-size: x-small;
+}
+
+.preview-bar .preview-buttons{
+    display: flex;
+}
+
+.preview-bar .preview-buttons button{
+    display: flex;
+    border-radius: 200px;
+    border: 0px;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    border: white;
+    background-color: rgb(255, 255, 255);
+}
+
+.preview-bar img{
+    width: 20px;
+    height: 20px;
+}
+
+.other-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    height: 100%;
+}
+
+.btn:hover{
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border: white;
+    background-color: rgb(242, 231, 235);
+    border-radius: 5px;
+    margin: 0px 5px 0px 5px
+}
+
+.download img{
+    margin-right: 5px;
+}
+
+.phone{
+    width: 14px !important;
 }
 
 .navbar{
     display: flex;
     justify-content: space-around;
+}
+
+.button-github{
+    border: white;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.close{
+    border: white;
+    background-color: rgb(255, 255, 255);
+    color: gray;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+}
+
+.github{
+    width: 12px;
 }
 
 /* Body */
