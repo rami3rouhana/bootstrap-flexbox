@@ -72,3 +72,39 @@
     width: 80%;
 }
 
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.web{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copy-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
