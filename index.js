@@ -44,6 +44,8 @@ const phone = () =>{
     document.getElementsByClassName("page-body")[0].style.width ="40%";
     document.getElementsByClassName("navbar")[0].style.width ="40%";
     document.getElementsByClassName("footer")[0].style.width ="40% ";
+    const imgs = document.getElementsByClassName("portfolio-img");
+    imgs.map( (img) => {debugger; img.style.width="50%"})
     document.getElementsByClassName("main-footer")[0].style.flexDirection="column";
     document.getElementsByClassName("main-footer")[0].style.alignItems="center";
 
