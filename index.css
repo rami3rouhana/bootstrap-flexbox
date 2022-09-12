@@ -20,8 +20,9 @@
     align-items: center;
     width: 100%;
     border-bottom: 3px solid red;
-    height: 50px;
+    height: 40px;
     margin-bottom: 10px;
+    margin: 0;
 }
 
 .overview{
@@ -49,13 +50,13 @@
     display: flex;
     border-radius: 200px;
     border: 0px;
-    margin-left: 10px;
     height: 40px;
     width: 40px;
     align-items: center;
     justify-content: center;
     border: white;
     background-color: rgb(255, 255, 255);
+    border-bottom: 10px;
 }
 
 .preview-bar img{
@@ -95,6 +96,34 @@
 .navbar{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(44,62,80);
+}
+
+.navbar-buttons{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-buttons button{
+    margin: 0px 5px 0px 5px;
+    height: 80%;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(44,62,80);;
+    border: rgb(44,62,80);
+    color: #FFF;
+}
+
+.navbar-buttons button:hover{
+    color: #1abc9c
+}
+
+.navbar h2{
+    margin: 0px;
+    color: #fff;
 }
 
 .button-github{
