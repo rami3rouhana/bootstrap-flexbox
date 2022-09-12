@@ -219,12 +219,47 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    background-color: #1abc9c;
+    padding-bottom: 80px;
+}
+
+.about-div h1{
+    font-size: 3rem;
+    color: #FFF;
+}
+
+.about-div img{
+    width: 250px;
+}
+
+.about-div button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #1abc9c;
+    color: white;
+    margin: 20px;
+}
+
+.about-div svg{
+    width: 20px;
+    height:20px;
+    margin-right:5px
 }
 
 .about-text{
+    align-items: flex-start;    
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.about-text p{
+    width: 400px;
 }
 
 .contact-div{
