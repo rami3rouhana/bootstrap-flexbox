@@ -3,6 +3,10 @@
 const desktop = () =>{
     document.getElementsByClassName("page-body")[0].style.width ="100%";
     document.getElementsByClassName("navbar")[0].style.width ="100%";
+    document.getElementsByClassName("footer").style.width ="100%";
+    document.getElementsByClassName("main-footer")[0].style.removeProperty("flex-direction")
+    document.getElementsByClassName("main-footer")[0].style.removeProperty("align-items")
+
     function scrollFunctionDesktop() {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
           document.getElementById("navbar").style.transitionDuration = "0.25s"
@@ -19,6 +23,11 @@ const desktop = () =>{
 const tablet = () =>{
     document.getElementsByClassName("page-body")[0].style.width ="60%";
     document.getElementsByClassName("navbar")[0].style.width ="60%";
+    document.getElementsByClassName("footer")[0].style.width ="60% ";
+    document.getElementsByClassName("main-footer")[0].style.flexDirection="column";
+    document.getElementsByClassName("main-footer")[0].style.alignItems="center";
+
+
     function scrollFunctionTablet() {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
           document.getElementById("navbar").style.transitionDuration = "0.25s"

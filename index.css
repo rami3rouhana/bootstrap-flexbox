@@ -165,6 +165,7 @@ body{
     flex-direction: column;
     align-items: center;
     border: 1px solid #1abc9c;
+    background-color: white;  
 }
 
 .landing-div{
