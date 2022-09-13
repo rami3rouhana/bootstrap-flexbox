@@ -91,23 +91,21 @@ document.getElementsByClassName("phone")[0].addEventListener("click", phone)
 const sendData = async (name, email, phone, message) => {
 
   try {
-    const url = "";
+    const url = "http://localhost/bootstrap-backend/send.php";
     const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      method: 'POST',
       body: JSON.stringify({
         name,
         email,
         phone,
         message
-      })
-    });
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      }
+    })
 
-    const data = await res.json();
-
-    return data;
+    return res;
 
   } catch (error) {
     console.log(error);
@@ -115,17 +113,23 @@ const sendData = async (name, email, phone, message) => {
 }
 
 // Send data to database
-document.getElementById("submit").addEventListener("onClick", () => {
+document.getElementById("submit").addEventListener("click", async () => {
 
   // Get user input
-  const name = document.getElementById("name");
-  const email = document.getElementById("email");
-  const phone = document.getElementById("phone");
-  const message = document.getElementById("message");
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  let message = document.getElementById("message").value;
+  const result = await sendData(name, email, phone, message);
 
-  const result = sendData(name, email, phone, message);
+  if (result.ok) {
 
-  if (result) {
+    // Reset input fields
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("message").value = "";
+
     alert('Message sent!');
   } else {
     alert('Someting went wrong!');
